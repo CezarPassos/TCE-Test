@@ -1,0 +1,248 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.imagem-cabecalho {
+    height: 100px;
+}
+
+.cabecalhomenu {
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho-menu-item {
+    font-family: "Source Code Pro", monospace;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.cabecalho-menu-item:hover{
+    color: red;
+}
+
+header:hover{
+    background-color: #202020;
+    }
+
+
+
+html,
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: #1E1E1E;
+
+}
+
+h1 {
+    color: white;
+}
+
+.h1_titulo {
+    text-align: center;
+
+}
+
+/* Botões de next e previous */
+
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: white;
+    z-index: 1;
+    background: rgb(180, 0, 0);
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.button_link {
+
+    text-decoration: none;
+    color: white;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, rgb(112, 112, 252), rgb(167, 167, 252), rgb(233, 217, 217));
+
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+button:hover {
+    color: rgb(180, 0, 0);
+
+
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+
+
+.proxima {
+    float: right;
+    right: 350px;
+    top: -10px;
+}
+
+.anterior {
+    left: 350px;
+    top: -10px;
+}
+
+/* Fim das configurações de botão */
+
+.div_example {
+
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #414040;
+    color: white;
+    border-color: #414040;
+    border-style: solid;
+    border-radius: 15px;
+    
+
+}
+
+.p_example {
+    background-color: #ffffff;
+    color: darkred;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px 1px 5px 1px;
+
+}
+
+.div_definition_and_usage {
+
+    border-style: solid;
+    border-width: 0.5px;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-color: #525252;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+
+}
+
+.div_browser_suport {
+
+    border-style: solid;
+    border-width: 0.5px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-color: #525252;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+   }
+
+/* Tabela de navegadores */
+
+table {
+    
+    margin: auto;
+}
+
+.table_navs {
+    background-color: rgb(16, 16, 100);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+
+
+}
+
+.table_navs_th {
+    background-image: linear-gradient(to bottom, rgb(118, 118, 243), rgb(175, 175, 245), white);
+    text-align: center;
+    width: 60px;
+
+}
+
+.table_navs_th_1 {
+    background-image: linear-gradient(to bottom, rgb(118, 118, 243), rgb(175, 175, 245), white);
+    color: darkblue;
+}
+
+td {
+    background-color: white;
+    text-align: center;
+    width: 60px;
+    color: darkblue;
+
+}
+
+/* Fim das configuraÇões de tabela */
+
+.div_syntax {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #414040;
+    color: white;
+    border-color: #414040;
+    border-style: solid;
+    border-radius: 15px;
+
+}
+
+.p_syntax {
+
+    background-color: #ffffff;
+    color: darkred;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px 1px 5px 1px;
+
+
+}
+
+footer {
+
+    text-align: center;
+    color: white;
+}
+
+.p_footer {
+    font-size: 0.8em;
+    color: #a7a7a7;
+}
